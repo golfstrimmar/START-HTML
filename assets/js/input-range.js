@@ -4,15 +4,15 @@ window.onload = function () {
 
 function sliders() {
     var tracks = ["-webkit-slider-runnable-track"];
-
     var thumbs = ["-webkit-slider-thumb"];
-
     initSliders ();
-    var sliderGroups = document.querySelectorAll(
+   
+    var sliderGroups = [ ...document.querySelectorAll(
         "section[data-type=slider-group]"
-    );
+    )];
+
     for (var i = 0; i < sliderGroups.length; i += 1) {
-        initSliderGroup(sliderGroups[i]);
+        initSliders(sliderGroups[i]);
     }
 
     function initSliders() {
