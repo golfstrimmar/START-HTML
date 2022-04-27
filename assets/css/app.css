@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  outline: 1px solid #4164ff;
+  /* outline: 1px solid #4164ff; */
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;

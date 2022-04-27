@@ -22,6 +22,7 @@
     <link href="assets/css/grid.css" rel="stylesheet">
     <link href="assets/css/sliders-swiper.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
+    <link href="assets/css/custom-select.css" rel="stylesheet">
 
 </head>
 
@@ -187,18 +188,22 @@
         </section>
         <!--    +++++//bunner++++-->
 
-
-        <div>
-            <svg class="test">
-                <use xlink:href="/assets/img/sprite.svg#Vector"></use>
-            </svg>
-            <svg class="test">
-                <use xlink:href="/assets/img/sprite.svg#search"></use>
-            </svg>
-        </div>
-
- 
-
+<!-- ++++++++select++++++++ -->
+<div class="form-group">
+    <button class="dropdown-button">
+      <span>custom select</span> 
+        <svg class="icon">
+            <use xlink:href="#chevron-down"></use>
+        </svg>
+    </button>
+    <ul class="dropdown-list">
+<li class="dropdown-list__item" data-value="Notes">Notes</li>
+<li class="dropdown-list__item" data-value="Photo">Photo</li>
+<li class="dropdown-list__item" data-value="Dictionary">Dictionary</li>
+    </ul>
+    <input  type='text' class='drop__input' value=''/>
+</div>
+<!-- ++++++++select++++++++ -->
 
 
                         <!--++++++++grid++++++++++-->
@@ -329,21 +334,21 @@
                                                     <div class="footer__soc soc">
                                                         <div class="soc-item"><a href="#!">
                                                                 <svg>
-                                                                    <use xlink:href="/assets/img/sprite.svg#burger">
+                                                                    <use xlink:href="#burger">
                                                                     </use>
                                                                 </svg>
 
                                                             </a></div>
                                                         <div class="soc-item"><a href="#!">
                                                                 <svg>
-                                                                    <use xlink:href="/assets/img/sprite.svg#close">
+                                                                    <use xlink:href="#close">
                                                                     </use>
                                                                 </svg>
 
                                                             </a></div>
                                                         <div class="soc-item"><a href="#!">
                                                                 <svg>
-                                                                    <use xlink:href="/assets/img/sprite.svg#close">
+                                                                    <use xlink:href="#close">
                                                                     </use>
                                                                 </svg>
 
@@ -714,19 +719,19 @@
                                     <div class="footer__soc soc">
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='/assets/img/sprite.svg#burger'></use>
+                                                    <use xlink:href='#burger'></use>
                                                 </svg>
 
                                             </a></div>
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='/assets/img/sprite.svg#close'></use>
+                                                    <use xlink:href='#close'></use>
                                                 </svg>
 
                                             </a></div>
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='/assets/img/sprite.svg#close'></use>
+                                                    <use xlink:href='#close'></use>
                                                 </svg>
 
                                             </a></div>
@@ -770,7 +775,7 @@
 
                 <i class="popup__close popup__close">
                     <svg>
-                        <use xlink:href="/assets/img/sprite.svg#close"></use>
+                        <use xlink:href="#close"></use>
                     </svg>
                 </i>
             </div>
@@ -827,6 +832,7 @@
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/input-range.js"></script>
+    <script src="assets/js/custom-select.js"></script>
 
 </body>
 
