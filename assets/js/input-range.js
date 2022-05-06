@@ -1,5 +1,10 @@
 window.onload = function () {
-    sliders();
+        var sliderGroups = [
+          ...document.querySelectorAll("section[data-type=slider-group]"),
+        ];
+        if (sliderGroups.length>0){
+sliders();
+        } 
 };
 
 function sliders() {

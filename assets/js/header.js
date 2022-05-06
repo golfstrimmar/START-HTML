@@ -55,7 +55,10 @@ const Header = () => {
 };
 
 document.addEventListener('DOMContentLoaded', function(){
-    Header();
+    const header = document.querySelector("header");
+    if (header) {
+        Header();
+    }
 });
 
 

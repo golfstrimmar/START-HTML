@@ -47,6 +47,7 @@ const MyTabs = () => {
     })
 
 };
+
 document.addEventListener('DOMContentLoaded', function(){
     const tabs = document.querySelectorAll('.tabs-container-js ');
     if(tabs.length){
