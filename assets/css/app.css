@@ -60,13 +60,12 @@ h3,
 h4,
 h5,
 h6 {
-  display: inline-block;
-  margin: 0 auto;
+  font-family: 'Sarina', cursive;
 }
 
 img {
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 img[data-src] {
@@ -91,6 +90,25 @@ img[data-src] {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.title {
+  margin: 30px 0;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.icon {
+  width: 24px;
+  height: 20px;
+  transition: all 0.2s ease-in-out;
+  stroke: #b18223;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0%, -50%) rotate(0);
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {

@@ -1,0 +1,47 @@
+
+.accord-js .tab-hidden-js {
+  width: 200%;
+  z-index: 10;
+}
+
+
+.accord__header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgb(230, 237, 243);
+}
+
+.accord-header-item {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  border: 3px solid #7ab764;
+  border-right: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.accord-header-item:last-child {
+  border: 3px solid #7ab764;
+}
+
+.accord-header-item._is-active {
+background: #bef5aa;
+}
+
+.accord-hidden-item {
+  background: rgb(187, 220, 248);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity .2s ease-in-out;
+  padding: 0 0 0 0;
+  font-size: 0;
+  opacity: 0;
+}
+
+.accord-hidden-item._is-active {
+  transform: scaleY(1);
+  padding: 20px 10px;
+  font-size: 18px;
+  opacity: 1;
+}

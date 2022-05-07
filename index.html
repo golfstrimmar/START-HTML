@@ -23,6 +23,7 @@
     <link href="assets/css/sliders-swiper.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/custom-select.css" rel="stylesheet">
+    <link href="assets/css/accordeon.css" rel="stylesheet">
 
 </head>
 
@@ -31,17 +32,17 @@
     <div class="wrapper">
 
         <!--+++++++header+++++++++-->
-         <header class="header">
+        <header class="header">
             <div class="container">
                 <div class="header__body">
 
-                   
+
 
                     <a class="header__logo" href="#!">
                         <img src="assets/img/logo.svg" alt="img">
                     </a>
 
-                    
+
 
                     <nav class="header__menu menu">
                         <i class="header__close">
@@ -59,7 +60,7 @@
                             </li>
                         </ul>
                     </nav>
-                   
+
 
                     <div class="header__info info">
                         <a class="info__phone" href="#!">+7(000) 123 45 65 67 </a>
@@ -71,17 +72,17 @@
                             <input type="submit">
                         </form>
                     </div>
-                   
+
 
                     <i class="header__burger">
-                    <svg class="icon">
-                        <use xlink:href="#list"></use>
-                    </svg>
+                        <svg class="icon">
+                            <use xlink:href="#list"></use>
+                        </svg>
                     </i>
-                    
+
                 </div>
             </div>
-        </header> 
+        </header>
         <!--+++++++/header+++++++++-->
 
         <!--    +++++++bunner-slider+++++++-->
@@ -152,9 +153,9 @@
             <form class="bunner-slider__search bunner-search">
                 <input type="text" placeholder="Leškoti..." />
                 <button type="submit">
-                            <svg class="icon">
-                                <use xlink:href="#search"></use>
-                            </svg>
+                    <svg class="icon">
+                        <use xlink:href="#search"></use>
+                    </svg>
                 </button>
             </form>
         </section>
@@ -187,529 +188,144 @@
         </section>
         <!--    +++++//bunner++++-->
 
-<!-- ++++++++select++++++++ -->
-<div class="form-group">
-    <button class="dropdown-button">
-      <span>custom select</span> 
-        <svg class="icon">
-            <use xlink:href="#chevron-down"></use>
-        </svg>
-    </button>
-    <ul class="dropdown-list">
-<li class="dropdown-list__item" data-value="Notes">Notes</li>
-<li class="dropdown-list__item" data-value="Photo">Photo</li>
-<li class="dropdown-list__item" data-value="Dictionary">Dictionary</li>
-    </ul>
-    <input  type='text' class='drop__input' value=''/>
-</div>
-<!-- ++++++++select++++++++ -->
+        <!-- ++++++++select++++++++ -->
+        <div class="form-group">
+            <button class="dropdown-button">
+                <span>custom select</span>
+                <svg class="icon">
+                    <use xlink:href="#chevron-down"></use>
+                </svg>
+            </button>
+            <ul class="dropdown-list">
+                <li class="dropdown-list__item" data-value="Notes">Notes</li>
+                <li class="dropdown-list__item" data-value="Photo">Photo</li>
+                <li class="dropdown-list__item" data-value="Dictionary">Dictionary</li>
+            </ul>
+            <input type='text' class='drop__input' value='' />
+        </div>
+        <!-- ++++++++select++++++++ -->
 
 
-                        <!--++++++++grid++++++++++-->
-                        <section class="grid">
-                            <div class="container">
-                                <div class="grid__title">
-                                    <h2>grid</h2>
-                                </div>
-                                <div class="grid__body">
+        <!--++++++++grid++++++++++-->
+        <section class="grid">
+            <div class="container">
+                <div class="grid__title">
+                    <h2>grid</h2>
+                </div>
+                <div class="grid__body">
 
-                                    <div class="grid__content grid-content">
+                    <div class="grid__content grid-content">
 
-                                        <!--   ========-->
-                                        <div class="grid-content__column ">
-                                            <div class="grid-content__col-title">
-                                                <h3>-просто грид-</h3>
-                                            </div>
-
-                                            <div class="grid-simple">
-                                                <div class="grid-simple__item">item1</div>
-                                                <div class="grid-simple__item">item2</div>
-                                            </div>
-
-                                            <div>
-                                                <p> .grid-simple{</p>
-                                                <p> margin: 20px 0 ;</p>
-                                                <p> display: grid;</p>
-                                                <p> grid-template-columns: min-content 1fr;</p>
-                                                <p> justify-content: space-between;</p>
-                                                <p> column-gap: 20px;</p>
-                                                <p> row-gap: 20px;</p>
-                                                <p> }</p>
-                                                <p> .grid-simple__item{</p>
-                                                <p> min-height: 50px;</p>
-                                                <p> } </p>
-                                            </div>
-
-                                        </div>
-
-
-                                        <!--   ========-->
-                                        <div class="grid-content__column">
-                                            <div class="grid-content__col-title">
-                                                <h3>-карточки одинаковой ширины заполняют пока хватает места-</h3>
-                                            </div>
-                                            <div class="cards cards-grid">
-                                                <div class="cards__card cards-card">
-                                                    <div class="imgs">
-                                                        <img src="assets/img/paralax.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="cards__card cards-card">
-                                                    <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="cards__card cards-card">
-                                                    <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="cards__card cards-card">
-                                                    <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="cards__card cards-card">
-                                                    <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg" alt="">
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                            <div>
-                                                <p> .cards-grid{</p>
-                                                <p> display: grid;</p>
-                                                <p> grid-template-columns: repeat(auto-fill, 200px);</p>
-                                                <p> justify-content: space-between;</p>
-                                                <p> column-gap: 20px;</p>
-                                                <p> row-gap: 20px;</p>
-                                                <p> }</p>
-                                                <p> .cards-card{</p>
-                                                <p> min-height: 300px;</p>
-                                                <p> } </p>
-                                            </div>
-                                        </div>
-
-                                        <!--   ========-->
-                                        <div class="grid-content__column">
-                                            <div class="grid-content__col-title">
-                                                <h3>-разделение карточек пустотой или особенной карточкой-</h3>
-                                            </div>
-                                            <div class="grid-items">
-                                                <div class="grid-item"><span>item1</span></div>
-                                                <div class="grid-item"><span>item2</span></div>
-                                                <div class="grid-item"><span>item3</span></div>
-                                                <div class="grid-item"><span>item4</span></div>
-                                                <div class="grid-item"><span>item5</span></div>
-                                                <div class="grid-item"><span>item6</span></div>
-                                                <div class="grid-item"><span>item7</span></div>
-                                                <div class="grid-item"><span>item8</span></div>
-                                            </div>
-                                            <div>
-                                                <p> .grid-items{</p>
-                                                <p> display: grid;</p>
-                                                <p> grid-template-columns: repeat(3, min-content) 1fr repeat(4,
-                                                    min-content);</p>
-                                                <p> column-gap: 20px;</p>
-                                                <p> }</p>
-                                                <p> .grid-item{</p>
-                                                <p> min-height: 50px;</p>
-                                                <p> } </p>
-                                            </div>
-
-
-                                        </div>
-
-                                        <!--   ========-->
-                                        <div class="grid-content__column ">
-                                            <div class="grid-content__col-title">
-                                                <h3>-колонки по ширине контента. последняя прижимается вправо-</h3>
-
-                                                <div class="footer__low">
-                                                    <span>© 2021 Nauja Oda. All rights reserved.</span>
-                                                    <a href="#!">Taisyklės ir sąlygos</a>
-                                                    <a href="#!">Privatumo politika</a>
-                                                    <div class="footer__soc soc">
-                                                        <div class="soc-item"><a href="#!">
-                                                                <svg>
-                                                                    <use xlink:href="#burger">
-                                                                    </use>
-                                                                </svg>
-
-                                                            </a></div>
-                                                        <div class="soc-item"><a href="#!">
-                                                                <svg>
-                                                                    <use xlink:href="#close">
-                                                                    </use>
-                                                                </svg>
-
-                                                            </a></div>
-                                                        <div class="soc-item"><a href="#!">
-                                                                <svg>
-                                                                    <use xlink:href="#close">
-                                                                    </use>
-                                                                </svg>
-
-                                                            </a></div>
-                                                    </div>
-                                                </div>
-
-                                                <p> .footer__low{</p>
-                                                <p> display: grid;</p>
-                                                <p> grid-template-columns: repeat(3, min-content) 1fr;</p>
-                                                <p> column-gap: 20px;</p>
-                                                <p> align-items: center;</p>
-                                                <p> }</p>
-                                                <p> .footer__soc{</p>
-                                                <p> justify-self: end;</p>
-                                                <p> } </p>
-
-                                            </div>
-                                        </div>
-                                        <!--   ========-->
-
-                                    </div>
-                                </div>
+                        <!--   ========-->
+                        <div class="grid-content__column ">
+                            <div class="grid-content__col-title">
+                                <h3>-просто грид-</h3>
                             </div>
-                        </section>
-                        <!--++++++++++++++++++-->
 
-                        <!--    +++++++++tabs+++++++++++-->
-                        <section class="tabs" id="tabs">
+                            <div class="grid-simple">
+                                <div class="grid-simple__item">item1</div>
+                                <div class="grid-simple__item">item2</div>
+                            </div>
 
-                            <div class="container">
-                                <div class="tabs__title">
-                                    <h2>Независимые табы</h2>
+                            <div>
+                                <p> .grid-simple{</p>
+                                <p> margin: 20px 0 ;</p>
+                                <p> display: grid;</p>
+                                <p> grid-template-columns: min-content 1fr;</p>
+                                <p> justify-content: space-between;</p>
+                                <p> column-gap: 20px;</p>
+                                <p> row-gap: 20px;</p>
+                                <p> }</p>
+                                <p> .grid-simple__item{</p>
+                                <p> min-height: 50px;</p>
+                                <p> } </p>
+                            </div>
+
+                        </div>
+
+
+                        <!--   ========-->
+                        <div class="grid-content__column">
+                            <div class="grid-content__col-title">
+                                <h3>-карточки одинаковой ширины заполняют пока хватает места-</h3>
+                            </div>
+                            <div class="cards cards-grid">
+                                <div class="cards__card cards-card">
+                                    <div class="imgs">
+                                        <img src="assets/img/paralax.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="cards__card cards-card">
+                                    <div class="imgs">
+                                        <img src="assets/img/paralax.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="cards__card cards-card">
+                                    <div class="imgs">
+                                        <img src="assets/img/paralax.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="cards__card cards-card">
+                                    <div class="imgs">
+                                        <img src="assets/img/paralax.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="cards__card cards-card">
+                                    <div class="imgs">
+                                        <img src="assets/img/paralax.jpg" alt="">
+                                    </div>
                                 </div>
 
-                                <ul class="tabs__body tabs-container-js">
 
-                                    <li class="tabs__tab tab">
-                                        <div class="tab__title tab-title-js">
-                                            <span class="">Часто задаваемый вопрос №1</span>
-                                            <i>
-<svg class="icon">
-    <use xlink:href="#chevron-down"></use>
-</svg>
-                                            </i>
-                                        </div>
-                                        <div class="tab__hidden tab-hidden-js">
-                                            <p class=""> Противоположная точка зрения подразумевает, что активно
-                                                развивающиеся страны
-                                                третьего мира неоднозначны и будут ограничены исключительно образом
-                                                мышления.</p>
-                                            <p class=""> Противоположная точка зрения подразумевает, что активно
-                                                развивающиеся страны
-                                                третьего мира неоднозначны и будут ограничены исключительно образом
-                                                мышления.</p>
-                                        </div>
-                                    </li>
-
-
-                                    <li class="tabs__tab tab">
-                                        <div class="tab__title tab-title-js">
-                                            <span class="">Часто задаваемый вопрос №1</span>
-                                            <i>
-<svg class="icon">
-    <use xlink:href="#chevron-down"></use>
-</svg>
-                                            </i>
-                                        </div>
-                                        <div class="tab__hidden tab-hidden-js">
-                                            <p class=""> Противоположная точка зрения подразумевает, что активно
-                                                развивающиеся страны
-                                                третьего мира неоднозначны и будут ограничены исключительно образом
-                                                мышления.</p>
-                                            <p class="">В своём стремлении повысить качество жизни, они забывают, что
-                                                новая модель
-                                                организационной деятельности является качественно новой ступенью
-                                                переосмысления
-                                                внешнеэкономических политик.</p>
-                                        </div>
-                                    </li>
-
-
-                                </ul>
                             </div>
-                        </section> 
-                        <!--    ++++++++///tabs++++++++++++-->
+                            <div>
+                                <p> .cards-grid{</p>
+                                <p> display: grid;</p>
+                                <p> grid-template-columns: repeat(auto-fill, 200px);</p>
+                                <p> justify-content: space-between;</p>
+                                <p> column-gap: 20px;</p>
+                                <p> row-gap: 20px;</p>
+                                <p> }</p>
+                                <p> .cards-card{</p>
+                                <p> min-height: 300px;</p>
+                                <p> } </p>
+                            </div>
+                        </div>
 
-
-                        <!--+++++++forms+++++++++++-->
-                        <section class="some-forms" id="some-forms">
-
-
-                            <div class="container">
-
-                                <form action="" class="contact-form">
-                                    <div class="contact-form__title">
-                                        <h2>Контактная форма</h2>
-                                    </div>
-                                    <div class="contact-form__item">
-                                        <label class="" for="name-form">
-                                            Your name
-                                        </label>
-                                        <input type="text" placeholder="name" id="name-form">
-                                    </div>
-
-                                    <div class="contact-form__item">
-                                        <label class="" for="email-form">
-                                            email
-                                        </label>
-                                        <input type="email" placeholder="email" id="email-form">
-                                    </div>
-
-                                    <div class="contact-form__item">
-                                        <label class="">
-                                            phone
-                                        </label>
-                                        <input type="phone" placeholder="phone" id="phone-form">
-                                    </div>
-
-                                    <div class="contact-form__item">
-                                        <div>
-                                            <input id="cb1" type="checkbox" />
-                                            <label for="cb1">Флажок 1</label>
-                                        </div>
-                                        <div>
-                                            <input id="cb2" type="checkbox" />
-                                            <label for="cb2">Флажок 2</label>
-                                        </div>
-                                        <div>
-                                            <input id="cb3" type="checkbox" />
-                                            <label for="cb3">Флажок 3</label>
-                                        </div>
-                                        <div class="m20"></div>
-                                        <div>
-                                            <input id="rb1" type="radio" name="rb" checked="" />
-                                            <label for="rb1">Переключатель 1</label>
-                                        </div>
-                                        <div>
-                                            <input id="rb2" type="radio" name="rb" />
-                                            <label for="rb2">Переключатель 2</label>
-                                        </div>
-                                        <div>
-                                            <input id="rb3" type="radio" name="rb" />
-                                            <label for="rb3">Переключатель 3</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="contact-form__item">
-                                        <section data-type="slider-group" data-question-id="9">
-                                            <div class="news-left-column__title">Ставка</div>
-                                            <p class="range">
-                                            <div class="news-left-column__number">
-                                                <output></output>
-                                                <b>лет </b>
-                                            </div>
-                                            <input id="test4" type="range" min="0" max="20" value="1" step="1"
-                                                name="groep4">
-                                            </p>
-                                        </section>
-
-                                    </div>
-
-                                    <button type="submit" class="submit-button btn btn--success">Отправить
-                                        форму</button>
-                                </form>
+                        <!--   ========-->
+                        <div class="grid-content__column">
+                            <div class="grid-content__col-title">
+                                <h3>-разделение карточек пустотой или особенной карточкой-</h3>
+                            </div>
+                            <div class="grid-items">
+                                <div class="grid-item"><span>item1</span></div>
+                                <div class="grid-item"><span>item2</span></div>
+                                <div class="grid-item"><span>item3</span></div>
+                                <div class="grid-item"><span>item4</span></div>
+                                <div class="grid-item"><span>item5</span></div>
+                                <div class="grid-item"><span>item6</span></div>
+                                <div class="grid-item"><span>item7</span></div>
+                                <div class="grid-item"><span>item8</span></div>
+                            </div>
+                            <div>
+                                <p> .grid-items{</p>
+                                <p> display: grid;</p>
+                                <p> grid-template-columns: repeat(3, min-content) 1fr repeat(4,
+                                    min-content);</p>
+                                <p> column-gap: 20px;</p>
+                                <p> }</p>
+                                <p> .grid-item{</p>
+                                <p> min-height: 50px;</p>
+                                <p> } </p>
                             </div>
 
 
-                            <div class="container">
-                                <form class="form">
-                                    <div class="form__item">
-                                        <input id="name1" type="text" required="" placeholder=" Denzel Washington" />
-                                        <label for="name1">What is your name?</label>
-                                    </div>
-                                    <div class="form__item">
-                                        <input id="email1" type="email" required=""
-                                            placeholder=" thebestmail@mail.com" />
-                                        <label for="email1">What is your email?</label>
-                                    </div>
-                                    <div class="form__item ">
-                                        <textarea id="message1" type="text" required=""
-                                            placeholder=" Your awesome         message" cols=" 40" rows="6"></textarea>
-                                        <label for="message1">Write your message</label>
-                                    </div>
-                                    <div class="form__item contacts__file-add">
-                                        <input class="custom-file-input" id="customFile1" type="file" />
-                                        <label class="name__text" for="customFile1">Add "attachment</label>
-                                        <div class="custom-file"></div>
-                                    </div>
-                                    <div class="form__item form__item--submit">
-                                        <input class="submit-button btn btn--success" type="submit"
-                                            placeholder="Send message" />
-                                    </div>
-                                </form>
-                            </div>
+                        </div>
 
-
-                        </section>
-                        <!--++++++++++++++++++-->
-
-
-                        <!--+++++++sliders+++++++++++-->
-                        <section class="slider" id="slider">
-
-                            <!--  -------- -->
-                            <div class="container">
-                                <div class="slider-full slider-full-js swiper-container">
-                                    <!--здесь  overflow: hidden;-->
-                                    <div class=" swiper-wrapper">
-                                        <div class="slider__item swiper-slide">
-                                            <div class="imgs"><img src="assets/img/paralax.jpg   " /></div>
-                                        </div>
-                                        <div class="slider__item swiper-slide">
-                                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                                        </div>
-                                        <div class="slider__item swiper-slide">
-                                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                                        </div>
-                                        <div class="slider__item swiper-slide">
-                                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination-1"></div>
-                                </div>
-                            </div>
-                            <!--  -------- -->
-                            <div class="container">
-                                <div class="slider__body">
-                                    <!--здесь  overflow: hidden;-->
-
-                                    <button class="content-slider-arrow content-slider-prev" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow-left"></use>
-                                    </svg>
-                                    </button>
-
-                                    <button class="content-slider-arrow content-slider-next" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg>
-                                    </button>
-
-                                    <div class="slider__wrapper slider-js-1 swiper-container">
-                                        <div class=" swiper-wrapper">
-                                            <div class="slider__item swiper-slide">
-                                                <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg  " />
-                                                </div>
-                                            </div>
-                                            <div class="slider__item swiper-slide">
-                                                <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg " />
-                                                </div>
-                                            </div>
-                                            <div class="slider__item swiper-slide">
-                                                <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg  " />
-                                                </div>
-                                            </div>
-                                            <div class="slider__item swiper-slide">
-                                                <div class="imgs">
-                                                    <img src="assets/img/paralax.jpg " />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </section>
-                        <!--++++++++++++++++++-->
-
-
-                        <!--++++++++++++++++++-->
-                        <!--++++++++++++++++++-->
-                        <!--++++++++++++++++++-->
-
-                        <!--+++++++footer+++++++++++-->
-                        <footer class="footer">
-                            <div class="container">
-
-                                <div class="footer__body">
-                                    <div class="footer-content__column">
-                                        <div class="footer__title">
-                                            <h2>Company</h2>
-                                        </div>
-
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="footer-content__column">
-                                        <div class="footer__title-small">
-                                            Заголовок колонки
-                                        </div>
-
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="footer-content__column">
-                                        <div class="footer__title-small">
-                                            Заголовок колонки
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="footer-content__column">
-                                        <div class="footer__title-small">
-                                            Заголовок колонки
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-
-                                        <div class="footer__line footer-line">
-                                            <div class="footer-line__text">footer-line-text</div>
-                                            <div class="footer-line__text">footer-line-text</div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!--   ========-->
+                        <div class="grid-content__column ">
+                            <div class="grid-content__col-title">
+                                <h3>-колонки по ширине контента. последняя прижимается вправо-</h3>
 
                                 <div class="footer__low">
                                     <span>© 2021 Nauja Oda. All rights reserved.</span>
@@ -718,27 +334,458 @@
                                     <div class="footer__soc soc">
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='#burger'></use>
+                                                    <use xlink:href="#burger">
+                                                    </use>
                                                 </svg>
 
                                             </a></div>
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='#close'></use>
+                                                    <use xlink:href="#close">
+                                                    </use>
                                                 </svg>
 
                                             </a></div>
                                         <div class="soc-item"><a href="#!">
                                                 <svg>
-                                                    <use xlink:href='#close'></use>
+                                                    <use xlink:href="#close">
+                                                    </use>
                                                 </svg>
 
                                             </a></div>
                                     </div>
                                 </div>
+
+                                <p> .footer__low{</p>
+                                <p> display: grid;</p>
+                                <p> grid-template-columns: repeat(3, min-content) 1fr;</p>
+                                <p> column-gap: 20px;</p>
+                                <p> align-items: center;</p>
+                                <p> }</p>
+                                <p> .footer__soc{</p>
+                                <p> justify-self: end;</p>
+                                <p> } </p>
+
                             </div>
-                        </footer>
-                        <!--++++++++++++++++++-->
+                        </div>
+                        <!--   ========-->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--++++++++++++++++++-->
+
+        <!--    +++++++++tabs+++++++++++-->
+        <section class="tabs" id="tabs">
+
+            <div class="container">
+                <div class="tabs__title title">
+                    <h2>табы</h2>
+                </div>
+
+                <ul class="tabs__body tabs-container-js">
+
+                    <li class="tabs__tab tab">
+                        <div class="tab__title tab-title-js">
+                            <span class="">Часто задаваемый вопрос №1</span>
+                            <svg class="icon">
+                                <use xlink:href="#chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="tab__hidden tab-hidden-js">
+                            Противоположная точка зрения подразумевает, что активно
+                            развивающиеся страны
+                            третьего мира неоднозначны и будут ограничены исключительно образом
+                            мышления.
+                        </div>
+                    </li>
+
+
+                    <li class="tabs__tab tab">
+                        <div class="tab__title tab-title-js">
+                            <span class="">Часто задаваемый вопрос №1</span>
+                            <svg class="icon">
+                                <use xlink:href="#chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="tab__hidden  tab-hidden-js">
+                            <p class=""> Противоположная точка зрения подразумевает, что активно
+                                развивающиеся страны
+                                третьего мира неоднозначны и будут ограничены исключительно образом
+                                мышления.</p>
+                            <p class="">В своём стремлении повысить качество жизни, они забывают, что
+                                новая модель
+                                организационной деятельности является качественно новой ступенью
+                                переосмысления
+                                внешнеэкономических политик.</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </section>
+        <!--    ++++++++///tabs++++++++++++-->
+
+        <!-- ++++++++++аккордеон+++++++++++ -->
+        <section class='accord' id='accord'>
+            <div class='accord__wrap'>
+                <div class='container'>
+                    <div class='accord__title title'>
+                        <h2>аккордеон</h2>
+                    </div>
+                    <div class='accord__body accord-js'>
+                        <div class="accord-header-js one accord__header ">
+                            <button class="accord-header-item" rel="item1">item1</button>
+                            <button class="accord-header-item" rel="item2">item2</button>
+                            <button class="accord-header-item" rel="item3">item3</button>
+                        </div>
+                        <div class="accord-hidden-js accord__hidden ">
+                            <div id="item1" class="accord-hidden-item">Lorem,ias iure quaerat tempore, reiciendis quos minus illo quo
+                                error doloribus ducimus?</div>
+                            <div id="item2" class="accord-hidden-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+                                deserunt tempore laboriosam. Cupiditate soluta in architecto mollitia maxime
+                                voluptatibus id hic nostrum amet porro eius ut autem, nisi, quidem quibusdam.</div>
+                            <div id="item3" class="accord-hidden-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, earum
+                                ut. Magnam, quibusdam reprehenderit vel quam atque facere in consectetur idem doloribus.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='accord' id='accord1'>
+            <div class='accord__wrap'>
+                <div class='container'>
+                    <div class='accord__title title'>
+                        <h2>аккордеон</h2>
+                    </div>
+                    <div class='accord__body accord-js'>
+                        <div class="accord-header-js accord__header ">
+                            <button class="accord-header-item" rel="item1">item1</button>
+                            <button class="accord-header-item" rel="item2">item2</button>
+                            <button class="accord-header-item" rel="item3">item3</button>
+                        </div>
+                        <div class="accord-hidden-js accord__hidden ">
+                            <div id="item1" class="accord-hidden-item">Lorem,ias iure quaerat tempore, reiciendis quos minus illo quo
+                                error doloribus ducimus?</div>
+                            <div id="item2" class="accord-hidden-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
+                                deserunt tempore laboriosam. Cupiditate soluta in architecto mollitia maxime
+                                voluptatibus id hic nostrum amet porro eius ut autem, nisi, quidem quibusdam.</div>
+                            <div id="item3" class="accord-hidden-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, earum
+                                ut. Magnam, quibusdam reprehenderit vel quam atque facere in consectetur idem doloribus.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- +++++++++++++++++++++ -->
+
+        <!--+++++++forms+++++++++++-->
+        <section class="some-forms" id="some-forms">
+
+
+            <div class="container">
+
+                <form action="" class="contact-form">
+                    <div class="contact-form__title">
+                        <h2>Контактная форма</h2>
+                    </div>
+                    <div class="contact-form__item">
+                        <label class="" for="name-form">
+                            Your name
+                        </label>
+                        <input type="text" placeholder="name" id="name-form">
+                    </div>
+
+                    <div class="contact-form__item">
+                        <label class="" for="email-form">
+                            email
+                        </label>
+                        <input type="email" placeholder="email" id="email-form">
+                    </div>
+
+                    <div class="contact-form__item">
+                        <label class="">
+                            phone
+                        </label>
+                        <input type="phone" placeholder="phone" id="phone-form">
+                    </div>
+
+                    <div class="contact-form__item">
+                        <div>
+                            <input id="cb1" type="checkbox" />
+                            <label for="cb1">Флажок 1</label>
+                        </div>
+                        <div>
+                            <input id="cb2" type="checkbox" />
+                            <label for="cb2">Флажок 2</label>
+                        </div>
+                        <div>
+                            <input id="cb3" type="checkbox" />
+                            <label for="cb3">Флажок 3</label>
+                        </div>
+                        <div class="m20"></div>
+                        <div>
+                            <input id="rb1" type="radio" name="rb" checked="" />
+                            <label for="rb1">Переключатель 1</label>
+                        </div>
+                        <div>
+                            <input id="rb2" type="radio" name="rb" />
+                            <label for="rb2">Переключатель 2</label>
+                        </div>
+                        <div>
+                            <input id="rb3" type="radio" name="rb" />
+                            <label for="rb3">Переключатель 3</label>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__item">
+                        <section data-type="slider-group" data-question-id="9">
+                            <div class="news-left-column__title">Ставка</div>
+                            <p class="range">
+                            <div class="news-left-column__number">
+                                <output></output>
+                                <b>лет </b>
+                            </div>
+                            <input id="test4" type="range" min="0" max="20" value="1" step="1" name="groep4">
+                            </p>
+                        </section>
+
+                    </div>
+
+                    <button type="submit" class="submit-button btn btn--success">Отправить
+                        форму</button>
+                </form>
+            </div>
+
+
+            <div class="container">
+                <form class="form">
+                    <div class="form__item">
+                        <input id="name1" type="text" required="" placeholder=" Denzel Washington" />
+                        <label for="name1">What is your name?</label>
+                    </div>
+                    <div class="form__item">
+                        <input id="email1" type="email" required="" placeholder=" thebestmail@mail.com" />
+                        <label for="email1">What is your email?</label>
+                    </div>
+                    <div class="form__item ">
+                        <textarea id="message1" type="text" required="" placeholder=" Your awesome         message"
+                            cols=" 40" rows="6"></textarea>
+                        <label for="message1">Write your message</label>
+                    </div>
+                    <div class="form__item contacts__file-add">
+                        <input class="custom-file-input" id="customFile1" type="file" />
+                        <label class="name__text" for="customFile1">Add "attachment</label>
+                        <div class="custom-file"></div>
+                    </div>
+                    <div class="form__item form__item--submit">
+                        <input class="submit-button btn btn--success" type="submit" placeholder="Send message" />
+                    </div>
+                </form>
+            </div>
+
+
+        </section>
+        <!--++++++++++++++++++-->
+
+
+        <!--+++++++sliders+++++++++++-->
+        <section class="slider" id="slider">
+
+            <!--  -------- -->
+            <div class="container">
+                <div class="slider-full slider-full-js swiper-container">
+                    <!--здесь  overflow: hidden;-->
+                    <div class=" swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs"><img src="assets/img/paralax.jpg   " /></div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination-1"></div>
+                </div>
+            </div>
+            <!--  -------- -->
+            <div class="container">
+                <div class="slider__body">
+                    <!--здесь  overflow: hidden;-->
+
+                    <button class="content-slider-arrow content-slider-prev" type="button">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </button>
+
+                    <button class="content-slider-arrow content-slider-next" type="button">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </button>
+
+                    <div class="slider__wrapper slider-js-1 swiper-container">
+                        <div class=" swiper-wrapper">
+                            <div class="slider__item swiper-slide">
+                                <div class="imgs">
+                                    <img src="assets/img/paralax.jpg  " />
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="imgs">
+                                    <img src="assets/img/paralax.jpg " />
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="imgs">
+                                    <img src="assets/img/paralax.jpg  " />
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="imgs">
+                                    <img src="assets/img/paralax.jpg " />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!--++++++++++++++++++-->
+
+
+        <!--++++++++++++++++++-->
+        <!--++++++++++++++++++-->
+        <!--++++++++++++++++++-->
+
+        <!--+++++++footer+++++++++++-->
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer__body">
+                    <div class="footer-content__column">
+                        <div class="footer__title">
+                            <h2>Company</h2>
+                        </div>
+
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-content__column">
+                        <div class="footer__title-small">
+                            Заголовок колонки
+                        </div>
+
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-content__column">
+                        <div class="footer__title-small">
+                            Заголовок колонки
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-content__column">
+                        <div class="footer__title-small">
+                            Заголовок колонки
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+
+                        <div class="footer__line footer-line">
+                            <div class="footer-line__text">footer-line-text</div>
+                            <div class="footer-line__text">footer-line-text</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__low">
+                    <span>© 2021 Nauja Oda. All rights reserved.</span>
+                    <a href="#!">Taisyklės ir sąlygos</a>
+                    <a href="#!">Privatumo politika</a>
+                    <div class="footer__soc soc">
+                        <div class="soc-item"><a href="#!">
+                                <svg>
+                                    <use xlink:href='#burger'></use>
+                                </svg>
+
+                            </a></div>
+                        <div class="soc-item"><a href="#!">
+                                <svg>
+                                    <use xlink:href='#close'></use>
+                                </svg>
+
+                            </a></div>
+                        <div class="soc-item"><a href="#!">
+                                <svg>
+                                    <use xlink:href='#close'></use>
+                                </svg>
+
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--++++++++++++++++++-->
 
 
     </div>
@@ -781,46 +828,46 @@
         </div>
     </div>
     <!--+++++++svgsvgsvgsvgsvgsvgsvgsvgsvgsvgsvgsvg+++++++++++-->
-<svg width="0" height="0" class="hidden">
-    <symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="search">
-        <path
-            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
-        </path>
-    </symbol>
+    <svg width="0" height="0" class="hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="search">
+            <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+            </path>
+        </symbol>
 
-    <symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="list">
-        <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-        </path>
-    </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="list">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+            </path>
+        </symbol>
 
-<symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="x">
-    <path
-        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
-    </path>
-</symbol>
-
-
-<symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="chevron-down">
-    <path fill-rule="evenodd"
-        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
-    </path>
-</symbol>
-
-<symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="arrow-right">
-    <path fill-rule="evenodd"
-        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
-    </path>
-</symbol>
-
-<symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" id="arrow-left">
-    <path fill-rule="evenodd"
-        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
-    </path>
-</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="x">
+            <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+            </path>
+        </symbol>
 
 
-</svg>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="chevron-down">
+            <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+            </path>
+        </symbol>
+
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="arrow-right">
+            <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+            </path>
+        </symbol>
+
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="arrow-left">
+            <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
+            </path>
+        </symbol>
+
+
+    </svg>
 
     <!--++++++svgsvgsvgsvgsvgsvgsvgsvgsvgsvgsvg++++++++++++-->
 
@@ -832,6 +879,7 @@
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/input-range.js"></script>
     <script src="assets/js/custom-select.js"></script>
+    <script src="assets/js/accordeon.js"></script>
 
 </body>
 
