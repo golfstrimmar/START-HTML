@@ -3,9 +3,8 @@
 const Accord = (accord) => {
   let head = accord.querySelector(".accord-header-js");
   let accordHidden = accord.querySelector(".accord-hidden-js");
-  let headItems = Array.prototype.slice.call(head.children);
-  let accordHiddenChildren = Array.prototype.slice.call(accordHidden.children);
-
+  let headItems = [...head.children];
+  let accordHiddenChildren = [...accordHidden.children];
   const activeHEAD = (e) => {
     headItems.forEach((cell) => {
       let temp = cell.getAttribute("rel");
