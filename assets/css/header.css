@@ -32,20 +32,13 @@
 
 .header__burger {
   display: none;
-  
 }
 
-.header__burger svg {
-  width: 30px;
-  height: 30px;
-  fill: white;
+.responciveHeader .icon {
+  fill: rgba(0, 0, 0, .6);
 }
 
-.responciveHeader .header__burger svg{
-  fill: rgba(0, 0, 0, .4);
-}
-
-.header__burger:hover {
+.icon:hover {
   cursor: pointer;
 }
 
@@ -53,14 +46,7 @@
   display: none;
 }
 
-.header__close svg {
-  width: 30px;
-  height: 30px;
-  fill: white;
-}
 /*=====================*/
-.header__logo {
-}
 
 .header__logo img {
   height: 100%;
@@ -82,7 +68,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   margin: 0 10px 0 0;
 }
 
@@ -90,37 +76,37 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 5px;
+  padding: 0 10px;
   transition: all 0.2s ease-in-out;
-  font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
   color: white;
 }
-.responciveHeader .menu__link{
+
+.responciveHeader .menu__link {
   color: rgb(15, 15, 15);
 }
+
 .menu__link:hover {
   color: white;
   background: #ff9999;
   box-shadow: 0px 0px 20px white !important;
 }
 
-.menu__link:focus {
-  border: 1px solid #cc0000 !important;
-  background: #ff3333;
-  box-shadow: 0 0 20px white !important;
-  color: white;
+
+ .menu__link--active {
+  color: white!important;
+  background: #f73030!important;
+  box-shadow: 0px 0px 20px white !important;
+} 
+
+.responciveHeader .menu__link--active {
+   color: white;
 }
 
-.menu__link--active {
-  background: red;
-  box-shadow: 0 0 8px white;
-  border-radius: 10px !important;
-  padding: 5px;
-}
+
 /*=====================*/
-.info {
+.info { 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,10 +163,7 @@
   opacity: 0.4;
 }
 
-
-
-
-.info__phone{
+.info__phone {
   color: white;
 }
 
@@ -239,28 +222,34 @@
     margin: 0;
   }
 
-  .header__burger {
-    display: inline-block;
-    color: #181818;
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+    stroke: transparent;
+    fill: white;
     position: absolute;
     top: 50%;
-    transform: translate(0%, -50%);
     right: 0;
+    transform: translate(0%, -50%) rotate(0);
+    display: inline-block;
   }
 
-  .header__close {
-    display: block;
-    position: absolute;
+
+
+   .header__close  {
+    width: 40px;
+    height: 40px;
     top: 10px;
     right: 10px;
+    transform: translate(0%, 0%);
   }
 
-  .header__close svg {
-    fill: white;
-  }
-
-  .header__close:hover {
-    cursor: pointer;
+.menu-active  .icon{
+fill: white;
+}
+  .info-active a.info__phone {
+    color: white ;
   }
 
   .header__menu {
@@ -308,7 +297,7 @@
     display: none !important;
   }
 
-  .menu__link {
+  .menu-active .menu__link {
     color: white;
     border-radius: 10px;
     padding: 5px;

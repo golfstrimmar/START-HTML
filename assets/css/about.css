@@ -1,0 +1,19 @@
+.about {
+  overflow: hidden;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 30px;
+  padding: 20px 0;
+}
+
+.about__item a.all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}

@@ -35,8 +35,8 @@
   border: 1px solid transparent;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 100% 5px;
-  border-bottom: 1px solid #d8d8d8;
+  background-position: 100% 5px; 
+   border-bottom: 1px solid #d8d8d8;
   resize: none;
 }
 
@@ -358,67 +358,9 @@
   text-transform: uppercase;
 }
 
-.contact-form__item input {
+.contact-form__item input, .contact-form__item textarea{
   border: 1px solid palegreen;
   padding: 8px 0 8px 15px;
-}
-
-/*=======input[type=range]============*/
-input[type=range] {
-  -webkit-appearance: none;
-  height: 35px;
-  padding: 0;
-  width: 100%;
-  border: none !important;
-  background-color: #fff !important;
-  outline: none !important;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  box-sizing: content-box;
-  border: 5px solid #7ab764;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: ew-resize;
-  margin-top: -10px;
-}
-
-input[type=range]::-moz-range-thumb {
-  height: 8px;
-  width: 8px;
-  border-radius: 18px;
-  background-color: #7ab764;
-  cursor: ew-resize;
-  margin-top: -14px;
-  -webkit-appearance: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  height: 2px;
-  color: transparent;
-  -webkit-appearance: none;
-}
-
-input[type=range]::-ms-track {
-  border-color: transparent;
-  height: 3px;
-}
-
-input[type=range]::-ms-fill-lower {
-  background-color: #7ab764 !important;
-  color: #7ab764 !important;
-}
-
-input[type=range]::-moz-range-progress {
-  background-color: #7ab764;
-  background-color: transparent;
-}
-
-input[type=range]:focus {
-  background-color: transparent !important;
 }
 
 

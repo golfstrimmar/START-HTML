@@ -13,25 +13,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     const swiperNew = new Swiper(".slider-js-1", {
-        navigation: {
-            prevEl: '.content-slider-prev',
-            nextEl: '.content-slider-next',
+      navigation: {
+        prevEl: ".js-1-prev",
+        nextEl: ".js-1-next",
+      },
+      slidesPerView: 1,
+      loop: "true",
+      speed: 800,
+      spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        slidesPerView: 3,
-        loop: 'true',
-        speed: 800,
-        spaceBetween: 10,
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                loop: 'true',
-                speed: 800,
-            },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 10,
         },
-
-    })
-
+      },
+    });
 
 
     const swiperFull = new Swiper(".slider-full-js", {
@@ -44,8 +44,5 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
     })
-
-
-
 
 });

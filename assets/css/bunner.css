@@ -1,6 +1,7 @@
 .bunner-slider {
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .bunner-slider .slider,
@@ -46,7 +47,7 @@
   z-index: 5;
 }
 
-.bunner-slider .slider-card__title h2 {
+.bunner-slider .slider-card__title h1 {
   line-height: 1.2;
   font-weight: 500;
   font-size: 60px;
@@ -128,8 +129,8 @@
 
 .bunner-search button svg {
   fill: white;
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .rec {
@@ -241,20 +242,20 @@
   .bunner-search input::placeholder {
     font-size: 17px;
   }
-}
 
-@media (max-width: 767px) {
   .bunner-search button {
     width: 17px;
     height: 17px;
     right: -7px;
     top: 51%;
   }
-}
 
-@media (max-width: 767px) {
+  .bunner-slider .slider-card__title h1 {
+    font-size: 35px;
+  }
+
   .bunner-search {
-    width: 100%;
+    width: 80%;
   }
 }
 

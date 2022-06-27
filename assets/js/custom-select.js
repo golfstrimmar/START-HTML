@@ -3,22 +3,24 @@
 
 const Select = (select) => {
 
-  const $button = select.querySelector('.dropdown-button');
-  const $list = select.querySelector('.dropdown-list');
-  const items = $list.querySelectorAll('.dropdown-list__item')
-  const input = select.querySelector('.drop__input')
+  const $button = select.querySelector('.dropdown-button'),
+        $list = select.querySelector('.dropdown-list'),
+        items = $list.querySelectorAll('.dropdown-list__item'),
+        input = select.querySelector('.drop__input');
 
   select.addEventListener('click', (e) => {
     e.preventDefault;
-    if (e.target.tagName == "BUTTON") {
-      e.target.classList.toggle('dropdown-button-active');
+    let target = e.target
+    if (target.tagName == "BUTTON") {
+      target.classList.toggle('dropdown-button-active');
       $list.classList.toggle("_active");
      
       items.forEach(item => {
         item.addEventListener('click', (e) => {
           items.forEach(item => {
-            item.classList.remove("_item-active");
-            e.target.classList.add("_item-active");
+  item == target
+  ? item.classList.add("_item-active")
+  : item.classList.remove("_item-active");
           });
           e.stopPropagation();
           $button.innerHTML = item.innerHTML;
@@ -30,9 +32,6 @@ const Select = (select) => {
       
     } 
   });
-
- 
-
 
   document.addEventListener('click', (e) => {
     if (e.target !== $button) {
@@ -51,10 +50,11 @@ const Select = (select) => {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const selects = document.querySelectorAll('.form-group')
-  selects.forEach(select => {
-    Select(select);
-  })
-})
+window.onload = () => {
+  const selects = [...document.querySelectorAll(".select-custom")];
+  if (selects.length > 0) {
+    selects.forEach((select) => {
+      Select(select);
+    });
+  }
+}

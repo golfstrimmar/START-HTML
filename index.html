@@ -9,6 +9,7 @@
 
 
     <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/about.css" rel="stylesheet">
     <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/null.css" rel="stylesheet">
@@ -24,6 +25,7 @@
     <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/custom-select.css" rel="stylesheet">
     <link href="assets/css/accordeon.css" rel="stylesheet">
+    <link href="assets/css/galery.css" rel="stylesheet">
 
 </head>
 
@@ -45,17 +47,18 @@
 
 
                     <nav class="header__menu menu">
-                        <i class="header__close">
-                            <svg class="icon">
-                                <use xlink:href="#x"></use>
-                            </svg>
-                        </i>
+                        <svg class="header__close icon">
+                            <use xlink:href="#x"></use>
+                        </svg>
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link button-scroll" href="#!" rel="#bunner">Home</a>
+                            <li class="menu__item">
+                                <a class="menu__link  menu__link--active 
+                                
+                                " href="#!" rel="#bunner">Home</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link button-scroll" href="#!" rel="#posts">Posts</a>
+                            <li class="menu__item"><a class="menu__link " href="#!" rel="#posts">Posts</a>
                             </li>
-                            <li class="menu__item"><a class="menu__link button-scroll" href="#!"
+                            <li class="menu__item"><a class="menu__link " href="#!"
                                     rel="#galery">Projects</a>
                             </li>
                         </ul>
@@ -63,7 +66,7 @@
 
 
                     <div class="header__info info">
-                        <a class="info__phone" href="#!">+7(000) 123 45 65 67 </a>
+                        <a class="info__phone " href="#!">+7(000) 123 45 65 67 </a>
                         <form class="info__search">
                             <input placeholder="Поиск">
                             <svg class="icon">
@@ -74,11 +77,9 @@
                     </div>
 
 
-                    <i class="header__burger">
-                        <svg class="icon">
-                            <use xlink:href="#list"></use>
-                        </svg>
-                    </i>
+                    <svg class="header__burger icon">
+                        <use xlink:href="#list"></use>
+                    </svg>
 
                 </div>
             </div>
@@ -100,10 +101,10 @@
 
                         <div class="container">
                             <div class="slider-card__body">
-                                <div class="slider-card__title">
-                                    <h2 class="_f-50 _w-500">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                                <div class="slider-card__title ">
+                                    <h1 >Perkant už 50 EUR <br> pristatymas nemokamas</h1>
                                 </div>
-                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup"
+                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup1"
                                     href="#!">
                                     Open popup</a>
                             </div>
@@ -118,9 +119,9 @@
                         <div class="container">
                             <div class="slider-card__body">
                                 <div class="slider-card__title">
-                                    <h2 class="_f-50">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                                    <h1 >Perkant už 50 EUR <br> pristatymas nemokamas</h1>
                                 </div>
-                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup"
+                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup2"
                                     href="#!">Open
                                     popup</a>
                             </div>
@@ -136,9 +137,9 @@
                         <div class="container">
                             <div class="slider-card__body">
                                 <div class="slider-card__title">
-                                    <h2 class="_f-50">Perkant už 50 EUR <br> pristatymas nemokamas</h2>
+                                    <h1 >Perkant už 50 EUR <br> pristatymas nemokamas</h1>
                                 </div>
-                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup"
+                                <a class="btn btn--success slider-card__button _f-25 popups-init-js" rel="#popup3"
                                     href="#!">Open
                                     popup</a>
                             </div>
@@ -165,14 +166,15 @@
         <!--    +++++bunner++++-->
         <section class="bunner" id="bunner">
             <div class="bunner__bg imgs">
-                <picture>
+                <!-- <picture>
                     <source srcset="assets/img/paralax.jpg, assets/img/paralax@2.jpg 2x,  assets/img/paralax@3.jpg 3x,"
                         type="image/jpg" media="(min-width: 1200px)" />
                     <source srcset="assets/img/img-2.png" type="image/png"
                         media="(min-width: 1000px) and (max-width: 1199px)" />
                     <source srcset="assets/img/busic.gif" type="image/gif" media="(max-width: 999px)" />
-                    <img data="assets/img/img-2.png" alt="img" />
-                </picture>
+                    <img data="assets/img/paralax.jpg" alt="img" />
+                </picture> -->
+                <img src="assets/img/paralax.jpg" alt="img" />
             </div>
             <div class="container">
                 <div class="bunner__body">
@@ -181,16 +183,184 @@
                     </div>
                     <div class="bunner__text">
                         <p>и способы борьбы с конкурирующими компаниями</p>
-                        <a class="btn btn--success bunner__button popups-init-js" href="#!" rel="#popup">Open popup</a>
+                        <a class="btn btn--success bunner__button popups-init-js" href="#!" rel="#popup1">
+                            <span>Open popup</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!--    +++++//bunner++++-->
 
+<section class='galery' id='galery'>
+     <div class='container'>
+        <div class='galery__title title'>
+           <h2>galery</h2>
+        </div>
+        <div class='galery__body galery-body'>
+   
+    <div class="galery__nav">
+        <button class="galery__nav-item _is-active" type="button" data="all" disabled>all</button>
+        <button class="galery__nav-item " type="button" data="red">red</button>
+        <button class="galery__nav-item " type="button" data="blue">blue</button>
+        <button class="galery__nav-item " type="button" data="green">green</button>
+        <button class="galery__nav-item " type="button" data="coral">coral</button>
+    </div>
+
+    <ul class="galery__items">
+        <li class="galery__item _start-item  rel " data="red">
+           <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="blue">
+           <div class="imgs"><img src="assets/img/card/img-1.png" alt=""></div>
+        </li>
+        <li class="galery__item  _start-item rel" data="coral">
+           <div class="imgs"><img src="assets/img/card/img-2.png" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="green">
+           <div class="imgs"><img src="assets/img/card/img-3.png" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="blue">
+           <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="green">
+           <div class="imgs"><img src="assets/img/card/img-1.png" alt=""></div>
+        </li>
+        <li class="galery__item _start-item rel" data="blue">
+           <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="red">
+           <div class="imgs"><img src="assets/img/card/img-2.png" alt=""></div>
+        </li>
+        <li class="galery__item  _start-item rel" data="blue">
+           <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+        </li>
+        <li class="galery__item _start-item  rel" data="coral">
+           <div class="imgs"><img src="assets/img/card/img-3.png" alt=""></div>
+        </li>
+    </ul>
+<!-- =================== -->
+
+    <section class="slider" id="slider-galery">
+            <div class="slider__body">
+    
+                <button class="slider-arrow slider-arrow-prev  arrow-galery-prev" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </button>
+    
+                <button class="slider-arrow slider-arrow-next arrow-galery-next" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </button>
+    
+                <div class="slider__wrapper slider-js-galery swiper-container">
+                    <div class=" swiper-wrapper">
+        
+                    </div>
+                </div>
+    
+        </div>
+    
+    </section>
+<!-- =================== -->
+ 
+         </div>
+     </div>
+</section>
+<!--
+.galery__
+ -->
+
+<a href="#!" class="btn btn--success but-wave" style="background-image: url(assets/img/card/img-3.png); background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;">
+    but-wave
+</a>
+
+
+<!-- +++++++++++++++about+++++++++++++ -->
+
+ <section class='about' id='about'>
+  <div class='rel'>
+    <div class='imgs _paralax '></div>
+     <div class='container'>
+        <div class='about__title title _anim-top'>
+           <h2>
+               cards
+           </h2>
+        </div>
+        <div class='about__body'> 
+            <ul class='_cards-container'>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+                 <li class="about__item rel _card _anim-left">
+                     <a class="all" href="#!" ></a>
+                     <div class="rel">
+                         <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                     </div>
+                     <h3>success</h3>
+                    <a href="#!" class="btn btn--success">open</a>
+                 </li>
+            </ul>
+
+            <div class="about__img rel _anim-right">
+                    <div class="imgs"><img src="assets/img/paralax.jpg" alt=""></div>
+                </div>
+            </div>
+                
+         </div>
+         
+     </div>
+  
+</section>
+<!--
+.about__
+ -->
+
         <!-- ++++++++select++++++++ -->
-        <div class="form-group">
-            <button class="dropdown-button">
+        <div class="select-custom select">
+            <button class="dropdown-button but-wave">
                 <span>custom select</span>
                 <svg class="icon">
                     <use xlink:href="#chevron-down"></use>
@@ -209,7 +379,7 @@
         <!--++++++++grid++++++++++-->
         <section class="grid">
             <div class="container">
-                <div class="grid__title">
+                <div class="grid__title _anim-top">
                     <h2>grid</h2>
                 </div>
                 <div class="grid__body">
@@ -324,7 +494,7 @@
 
                         <!--   ========-->
                         <div class="grid-content__column ">
-                            <div class="grid-content__col-title">
+                            <div class="grid-content__col-title ">
                                 <h3>-колонки по ширине контента. последняя прижимается вправо-</h3>
 
                                 <div class="footer__low">
@@ -376,117 +546,164 @@
         </section>
         <!--++++++++++++++++++-->
 
-        <!--    +++++++++tabs+++++++++++-->
-        <section class="tabs" id="tabs">
+<section class="tabs">
 
-            <div class="container">
-                <div class="tabs__title title">
-                    <h2>табы</h2>
-                </div>
-
-                <ul class="tabs__body tabs-container-js">
-
-                    <li class="tabs__tab tab">
-                        <div class="tab__title tab-title-js">
-                            <span class="">Часто задаваемый вопрос №1</span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-down"></use>
-                            </svg>
-                        </div>
-                        <div class="tab__hidden tab-hidden-js">
-                            Противоположная точка зрения подразумевает, что активно
-                            развивающиеся страны
-                            третьего мира неоднозначны и будут ограничены исключительно образом
-                            мышления.
-                        </div>
-                    </li>
-
-
-                    <li class="tabs__tab tab">
-                        <div class="tab__title tab-title-js">
-                            <span class="">Часто задаваемый вопрос №1</span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-down"></use>
-                            </svg>
-                        </div>
-                        <div class="tab__hidden  tab-hidden-js">
-                            <p class=""> Противоположная точка зрения подразумевает, что активно
-                                развивающиеся страны
-                                третьего мира неоднозначны и будут ограничены исключительно образом
-                                мышления.</p>
-                            <p class="">В своём стремлении повысить качество жизни, они забывают, что
-                                новая модель
-                                организационной деятельности является качественно новой ступенью
-                                переосмысления
-                                внешнеэкономических политик.</p>
-                        </div>
-                    </li>
-
-
-                </ul>
-            </div>
-        </section>
-        <!--    ++++++++///tabs++++++++++++-->
-
-
-
-        <!-- ++++++++++аккордеон+++++++++++ -->
-        <section class='accord' id='accord'>
-            <div class='accord__wrap'>
-                <div class='container'>
-                    <div class='accord__title title'>
-                        <h2>аккордеон</h2>
+                    <div class="tabs__title title _anim-top">
+                        <h2>табы</h2>
                     </div>
-                    <div class='accord__body accord-js'>
-                        <div class="accord-header-js one accord__header ">
-                            <button class="accord-header-item" rel="item1">item1</button>
-                            <button class="accord-header-item" rel="item2">item2</button>
-                            <button class="accord-header-item" rel="item3">item3</button>
+<div class="container ">
+
+  <ul class="tabs__body tabs-container-js">
+    <li  class="tabs__tab tab tab-js" >
+           <p class="tab__title tab-title-js"><span class="">tab1</span>
+            <svg>
+                <use xlink:href="#chevron-down"></use>
+             </svg>
+           </p> 
+    <div class="hidden">
+                        <ul class="tabs__body tabs-container-js">
+                        
+                            <li class="tabs__tab tab tab-js">
+                                <p class="tab__title tab-title-js">
+                                    <span class="">title1</span>
+                                    <svg>
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </p>
+                                <div class="hidden">
+                                    <p>hidden1</p>
+                                    <p>hidden1</p>
+                                    <p>hidden1</p>
+                                    <p>hidden1</p>
+                                    <ul class="tabs__body tabs-container-js">
+                                    
+                                        <li class="tabs__tab tab tab-js">
+                                            <p class="tab__title tab-title-js">
+                                                <span class="">title11</span>
+                                                <svg>
+                                                    <use xlink:href="#chevron-down"></use>
+                                                </svg>
+                                            </p>
+                                            <div class="hidden">
+                                                <p>hidden1</p>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="tabs__tab  tab tab-js">
+                                            <p class="tab__title tab-title-js">
+                                                <span class="">title12</span>
+                                                <svg>
+                                                    <use xlink:href="#chevron-down"></use>
+                                                </svg>
+                                            </p>
+                                            <div class="hidden">
+                                                <p>hidden2</p>
+                                            </div>
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="tabs__tab tab tab-js">
+                                <p class="tab__title tab-title-js">
+                                    <span class="">title2</span>
+                                    <svg>
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </p>
+
+                                <div class="hidden">
+                                    <p>hidden2</p>
+                                </div>
+                            </li>
+                        
+                        </ul>
+    </div>
+    </li>
+
+    <li class="tabs__tab tab tab-js">
+        <p class="tab__title tab-title-js"><span class="">tab2</span>
+            <svg>
+                <use xlink:href="#chevron-down"></use>
+            </svg>
+        </p>
+    <div class="hidden">
+                    <section class='accord__body accord-js'>
+                        <div class="accord-header-js  accord__header ">
+                            <button class="accord-header-item" rel="0">11111111</button>
+                            <button class="accord-header-item" rel="1">Tabs</button>
+                            <button class="accord-header-item" rel="2">form</button>
                         </div>
                         <div class="accord-hidden-js accord__hidden ">
-                            <div id="item1" class="accord-hidden-item">Lorem,ias iure quaerat tempore, reiciendis quos minus illo quo
-                                error doloribus ducimus?</div>
-                            <div id="item2" class="accord-hidden-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-                                deserunt tempore laboriosam. Cupiditate soluta in architecto mollitia maxime
-                                voluptatibus id hic nostrum amet porro eius ut autem, nisi, quidem quibusdam.</div>
-                            <div id="item3" class="accord-hidden-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, earum
-                                ut. Magnam, quibusdam reprehenderit vel quam atque facere in consectetur idem doloribus.
+                            <div class="accord-hidden-item">
+                                <p>11111111</p>
+                                <p>11111111</p>
+                            </div>
+                            <div class="accord-hidden-item">
+                                <p>2222222222</p>
+                                <p>2222222222</p>
+                            </div>
+                    
+                            <div class="accord-hidden-item">
+                                <p>3333333333333333</p>
+                                <p>33333333333333333</p>
+                                <p>3333333333333333</p>
                             </div>
                         </div>
+                    </section>
+    </div>
+    </li>
 
+    <li class="tabs__tab tab tab-js">
+        <p class="tab__title tab-title-js"><span class="">tab3</span>
+            <svg>
+                <use xlink:href="#chevron-down"></use>
+            </svg>
+        </p>
+        <div class="hidden">
+            <p>hidden3</p>
+        </div>
+    </li>
+  </ul>
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- 
+<section class='accord' id='accord'>
+    <div class='container'>
+        <div class='accord__title title _anim-top'>
+            <h2>аккордеон</h2>
+        </div> -->
+                           
+               <section class='accord__body accord-js'>
+                    <div class="accord-header-js  accord__header ">
+                        <button class="accord-header-item" rel="0">11111111</button>
+                        <button class="accord-header-item" rel="1">Tabs</button>
+                        <button class="accord-header-item" rel="2">form</button>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class='accord' id='accord1'>
-            <div class='accord__wrap'>
-                <div class='container'>
-                    <div class='accord__title title'>
-                        <h2>аккордеон</h2>
-                    </div>
-                    <div class='accord__body accord-js'>
-                        <div class="accord-header-js accord__header ">
-                            <button class="accord-header-item" rel="item1">item1</button>
-                            <button class="accord-header-item" rel="item2">item2</button>
-                            <button class="accord-header-item" rel="item3">item3</button>
+                    <div class="accord-hidden-js accord__hidden ">
+                        <div class="accord-hidden-item">
+                            <p>11111111</p>
+                            <p>11111111</p>
                         </div>
-                        <div class="accord-hidden-js accord__hidden ">
-                            <div id="item1" class="accord-hidden-item">Lorem,ias iure quaerat tempore, reiciendis quos minus illo quo
-                                error doloribus ducimus?</div>
-                            <div id="item2" class="accord-hidden-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-                                deserunt tempore laboriosam. Cupiditate soluta in architecto mollitia maxime
-                                voluptatibus id hic nostrum amet porro eius ut autem, nisi, quidem quibusdam.</div>
-                            <div id="item3" class="accord-hidden-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, earum
-                                ut. Magnam, quibusdam reprehenderit vel quam atque facere in consectetur idem doloribus.
-                            </div>
+                        <div class="accord-hidden-item">
+                        <p>2222222222</p>
+                        <p>2222222222</p>
                         </div>
-
+                
+                        <div class="accord-hidden-item">
+                            <p>3333333333333333</p>
+                            <p>33333333333333333</p>
+                            <p>3333333333333333</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section> 
+     <!-- </div>
+</section> -->
 
-        <!-- +++++++++++++++++++++ -->
 
         <!--+++++++forms+++++++++++-->
         <section class="some-forms" id="some-forms">
@@ -520,6 +737,13 @@
                     </div>
 
                     <div class="contact-form__item">
+                        <label class="">
+                            message
+                        </label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message text "></textarea>
+                    </div>
+
+                    <div class="contact-form__item">
                         <div>
                             <input id="cb1" type="checkbox" />
                             <label for="cb1">Флажок 1</label>
@@ -548,16 +772,14 @@
                     </div>
 
                     <div class="contact-form__item">
-                        <section data-type="slider-group" data-question-id="9">
-                            <div class="news-left-column__title">Ставка</div>
-                            <p class="range">
-                            <div class="news-left-column__number">
-                                <output></output>
-                                <b>лет </b>
-                            </div>
-                            <input id="test4" type="range" min="0" max="20" value="1" step="1" name="groep4">
-                            </p>
-                        </section>
+                        <label class="">
+                            range
+                        </label>
+<div class="range-wrap">
+<div id="rangeValue">0</div>
+<input type="range" name="myRange" id="myRange" min="0" max="100" value="0" step="1" >
+
+</div>
 
                     </div>
 
@@ -571,20 +793,21 @@
                 <form class="form">
                     <div class="form__item">
                         <input id="name1" type="text" required="" placeholder=" Denzel Washington" />
-                        <label for="name1">What is your name?</label>
+                        <label for="name1"> Your name</label>
                     </div>
                     <div class="form__item">
                         <input id="email1" type="email" required="" placeholder=" thebestmail@mail.com" />
-                        <label for="email1">What is your email?</label>
+                        <label for="email1"> Your email</label>
                     </div>
                     <div class="form__item ">
                         <textarea id="message1" type="text" required="" placeholder=" Your awesome         message"
                             cols=" 40" rows="6"></textarea>
-                        <label for="message1">Write your message</label>
+                        <label for="message1">Write your message here, please</label>
                     </div>
+
                     <div class="form__item contacts__file-add">
                         <input class="custom-file-input" id="customFile1" type="file" />
-                        <label class="name__text" for="customFile1">Add "attachment</label>
+                        <label class="name__text" for="customFile1">Add attachment here, please</label>
                         <div class="custom-file"></div>
                     </div>
                     <div class="form__item form__item--submit">
@@ -600,41 +823,18 @@
 
         <!--+++++++sliders+++++++++++-->
         <section class="slider" id="slider">
-
-            <!--  -------- -->
-            <div class="container">
-                <div class="slider-full slider-full-js swiper-container">
-                    <!--здесь  overflow: hidden;-->
-                    <div class=" swiper-wrapper">
-                        <div class="slider__item swiper-slide">
-                            <div class="imgs"><img src="assets/img/paralax.jpg   " /></div>
-                        </div>
-                        <div class="slider__item swiper-slide">
-                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                        </div>
-                        <div class="slider__item swiper-slide">
-                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                        </div>
-                        <div class="slider__item swiper-slide">
-                            <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination-1"></div>
-                </div>
-            </div>
             <!--  -------- -->
             <div class="container">
                 <div class="slider__body">
-                    <!--здесь  overflow: hidden;-->
 
-                    <button class="content-slider-arrow content-slider-prev" type="button">
-                        <svg class="icon">
+                    <button class="slider-arrow slider-arrow-prev js-1-prev" type="button">
+                        <svg>
                             <use xlink:href="#arrow-left"></use>
                         </svg>
                     </button>
 
-                    <button class="content-slider-arrow content-slider-next" type="button">
-                        <svg class="icon">
+                    <button class="slider-arrow slider-arrow-next js-1-next" type="button">
+                        <svg>
                             <use xlink:href="#arrow-right"></use>
                         </svg>
                     </button>
@@ -665,8 +865,28 @@
                     </div>
 
                 </div>
+            
             </div>
-
+        <!--  -------- -->
+        <div class="container">
+                            <div class="slider-full slider-full-js swiper-container">
+                                <div class=" swiper-wrapper">
+                                    <div class="slider__item swiper-slide">
+                                        <div class="imgs"><img src="assets/img/paralax.jpg   " /></div>
+                                    </div>
+                                    <div class="slider__item swiper-slide">
+                                        <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                                    </div>
+                                    <div class="slider__item swiper-slide">
+                                        <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                                    </div>
+                                    <div class="slider__item swiper-slide">
+                                        <div class="imgs"><img src="assets/img/paralax.jpg  " /></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination-1"></div>
+                            </div>
+        </div>
         </section>
         <!--++++++++++++++++++-->
 
@@ -794,9 +1014,10 @@
     <!--++++++++//wrapper++++++++++-->
 
     <!--+++++++  popup  +++++++++++-->
-    <div class="popup" id="popup">
-        <div class="popup__overlay">
-            <div class="popup__inner">
+    <div class="popup popup-js" >
+        <div class="popup__overlay popup-overlay-js">
+            <div class="popup__inner" >
+                <div class="popup__content" id="popup1">
                 <form class="form">
                     <div class="form__item">
                         <input id="name" type="text" required="" placeholder=" Denzel Washington" />
@@ -820,13 +1041,61 @@
                         <input class="submit-button btn btn--success" type="submit" placeholder="Send message" />
                     </div>
                 </form>
+              </div>
 
-                <i class="popup__close popup__close">
+               <div class="popup__content" id="popup2">
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+                   <p>popup2</p>
+               </div>
+               <div class="popup__content" id="popup3">
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+                   <p>popup3</p>
+            
+               </div>
+
+                <i class="popup__close popup-close-js">
                     <svg>
-                        <use xlink:href="#close"></use>
+                        <use xlink:href="#x"></use>
                     </svg>
                 </i>
             </div>
+
+
+
         </div>
     </div>
     <!--+++++++svgsvgsvgsvgsvgsvgsvgsvgsvgsvgsvgsvg+++++++++++-->
@@ -882,7 +1151,11 @@
     <script src="assets/js/input-range.js"></script>
     <script src="assets/js/custom-select.js"></script>
     <script src="assets/js/accordeon.js"></script>
-
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/galery.js"></script>
+    <script src="assets/js/clean.js"></script>
+   
 </body>
 
 </html>

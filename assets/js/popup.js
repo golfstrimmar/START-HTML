@@ -1,77 +1,65 @@
+"use strict";
 
-'use strict'
+const Popup = () => {
+  const popup = document.querySelector(".popup-js"),
+    body = document.querySelector("body"),
+    contents = popup.querySelectorAll(".popup__content");
 
-const Popup = (cell) => {
-    let id =cell.getAttribute("rel")
-    let popup =  document.querySelector(id);
-    popup.style.cssText= "  display: block; ";
-    popup.animate([
-        { opacity:  '0' },
-        { opacity: '1' }
-    ], {
-        duration: 200,
-    })
-    setTimeout(()=>{
-        popup.style.cssText= "opacity: 1;  display: block; ";
-    }, 200);
+  document.addEventListener("click", (e) => {
+    const target = e.target;
 
-    document.querySelector("body").style.cssText= "overflow: hidden"
-    let overlay =  popup.querySelector('.popup__overlay');
-    let close = popup.querySelector('.popup__close');
-
-    close.addEventListener('click',(e) =>{
-        document.querySelector("body").style.cssText= "overflow: visible"
-
-        popup.animate([
-            { opacity:  '1' },
-            { opacity: '0' }
-        ], {
-            duration: 200,
-        })
-        setTimeout(()=>{
-            popup.style.cssText= "opacity: 0;  display: none; ";
-        }, 200);
-    });
-
-    overlay.addEventListener('click',(e) =>{
-        if (e.target.classList.contains("popup__overlay")) {
-            popup.animate([
-                { opacity:  '1' },
-                { opacity: '0' }
-            ], {
-                duration: 200,
-            })
-            setTimeout(()=>{
-                popup.style.cssText= "opacity: 0;  display: none; ";
-            }, 200);
-            document.querySelector("body").style.cssText= "overflow: visible"
+    // ==========================
+    const openPop = () => {
+      const initTarget = popup.querySelector(target.getAttribute("rel"));
+      console.log(initTarget);
+      const contents = popup.querySelectorAll(".popup__content");
+      contents.forEach((cell) => {
+        if (cell == initTarget) {
+          initTarget.style.display = "block";
+        } else {
+          cell.style.display = "none";
         }
-    });
-}
+      });
 
+      popup.style.display = "block";
+      popup.animate([{ opacity: "0" }, { opacity: "1" }], {
+        duration: 200,
+      });
+      setTimeout(() => {
+        popup.style.opacity = "1";
+      }, 200);
+      body.style.cssText = "overflow: hidden";
+    };
+    // ==========================
+    const closePop = () => {
+      popup.animate([{ opacity: "1" }, { opacity: "0" }], {
+        duration: 200,
+      });
+      setTimeout(() => {
+        popup.style.display = "none";
+        popup.style.opacity = "0";
+      }, 180);
+      body.style.cssText = "overflow: visible";
+      contents.forEach((cell) => {
+        cell.style.display = "none";
+      });
+    };
+    // ==========================
 
-document.addEventListener('DOMContentLoaded', function(){
-    const popupsInit = document.querySelectorAll('.popups-init-js ')
-    if(popupsInit){
-        popupsInit.forEach((cell)=>{
-            cell.addEventListener('click',(e) => {
-                const modals = document.querySelectorAll('.popups ')
-                if (modals){
-                    modals.forEach(( modal)=>{
-                        modal.style.cssText= "opacity: 0;  display: none; ";
-                    })
-                }
-                Popup(cell);
-            });
-        })
+    if (target.closest(".popups-init-js")) {
+      openPop();
+    } else if (
+      target.matches(".popup-overlay-js") ||
+      target.closest(".popup-close-js")
+    ) {
+      closePop();
     }
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popupsInit = document.querySelectorAll(".popups-init-js ");
+  if (popupsInit.length > 0) {
+    Popup();
+  }
 });
-
-
-
-
-
-
-
-
-
